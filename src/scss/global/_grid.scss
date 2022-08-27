@@ -1,14 +1,48 @@
-@mixin flex($dir, $vertial, $horizontal, $wrap, $gap) {
-    display: flex;
-    flex-direction: $dir;
-    justify-content: $vertial;
-    align-items: $horizontal;
-    flex-wrap: $wrap;
-    gap: $gap;
+@mixin flex($dir, $vertial, $horizontal, $wrap, $gap:none) {
+	display: flex;
+	@if $dir		!= none {flex-direction: $dir;}
+	@if $vertial	!= none {justify-content: $vertial;}
+	@if $horizontal	!= none {align-items: $horizontal;}
+	@if $wrap		!= none {flex-wrap: $wrap;}
+	@if $gap		!= none {gap: $gap;}
 }
 
 // $breakpoints
 
-@mixin row-between {
-    @include flex(row, space-between, center, wrap, $space-0);
+@mixin row-between-center {
+	@include flex(none, space-between, center, wrap, );
+}
+
+@mixin row-between-end {
+	@include flex(none, space-between, flex-end, none, )
+}
+
+@mixin row-end-center {
+	@include flex(none, flex-end, center, none, )
+}
+
+@mixin row-vcenter {
+	@include flex(none, flex-start, center, wrap, )
+}
+
+@mixin row {
+	display: flex;
+	margin-left: -$space-2;
+	margin-right: -$space-2;
+}
+
+.col-xl-6 {
+	flex: 1 1 50%;
+	padding-left: $space-2;
+	padding-right: $space-2;
+}
+
+@each $key, $value in $spaces {
+	.mr-#{$key} {
+		margin-right: $value;
+	}
+}
+
+.mr {
+	margin-right: $space-2;
 }

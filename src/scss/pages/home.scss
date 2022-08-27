@@ -1,3 +1,22 @@
 .banner {
     @include container;
+    @include row-vcenter;
+    > div {
+        @include row;
+        max-height: calc(100vh - $header-height);
+        >div {
+            align-self: center;
+            @include row-vcenter;
+            &:last-child {
+                max-height: 80%;
+            }
+        }
+    }
+}
+
+.partners {
+    @include row-between-center;
+    >div {
+        flex: 1;
+    }
 }

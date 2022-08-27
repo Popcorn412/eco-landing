@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: $font;
 }
 
 div, main, section, header, menu, footer {
@@ -9,13 +10,18 @@ div, main, section, header, menu, footer {
 }
 
 ul {
+    display: block;
     margin: 0;
     padding: 0;
 }
 
+a, button {
+    text-decoration: none;
+}
+
 .root {
     background: var(--bg);
-    font-size: $font-size;
+    font-size: $font-size-0;
 }
 
 * {
@@ -33,6 +39,10 @@ ul {
     margin: auto;
 }
 
+@mixin full-screen {
+    min-height: 100vh;
+}
+
 .container {
     @include container;
 }
@@ -43,7 +53,9 @@ ul {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    line-height: 1.25rem;
+    line-height: 1.25em;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -56,4 +68,9 @@ h2 {
 
 h3 {
     font-size: $font-size-3;
+}
+
+img {
+    width: 100%;
+    height: 100%;
 }

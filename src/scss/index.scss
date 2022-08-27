@@ -2,5 +2,9 @@
 @import "./global/initialize";
 
 @import "./global/grid";
+@import "./global/text";
+@import "./global/button";
 
 @import "./layout";
+
+@import "./pages/home.scss";

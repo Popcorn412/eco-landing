@@ -1,11 +1,35 @@
 header {
+	// position: fixed;
+	// width: 100%;
 	.header {
+		min-height: $header-height;
 		@include container;
-		@include row-between;
+		@include row-between-end;
 		.logo {
+			flex: 1;
 			img {
 				width: 200px;
 			}
+		}
+		ul {
+			@include row-between-center;
+			gap: $space-2;
+			list-style: none;
+			li {
+				a {
+					display: block;
+					padding: 1em 1.5em;
+					
+					&:hover {
+						background: gray;
+					}
+				}
+			}
+		}
+		.agency {
+			flex: 1;
+			@include row-end-center;
+			width: 200px;
 		}
 	}
 }

@@ -1,0 +1,7 @@
+@mixin btn {
+    padding: 0.8em 1em;
+}
+
+.btn-primary {
+    @include btn;
+}

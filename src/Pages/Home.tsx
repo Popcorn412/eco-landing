@@ -185,42 +185,64 @@ function Home () {
         <main>
             <section className="banner">
                 <div className="container">
-					<div>
+					<div className="col-xl-6">
 						<h1>Play Earn Plant!</h1>
-						<p>Build your environment both in digital and real Don’t forget, every tree counts</p>
+						<p className="text-3">Build your environment both in digital and real Don’t forget, every tree counts</p>
 						<div>
-							<button className="btn-primary text-upper">Join waiting list</button>
+							<button className="btn-primary text-upper mr">Join waiting list</button>
 							<button className="btn-primary text-upper">Watch now</button>
 						</div>
 					</div>
-					<div>
+					<div className="col-xl-6">
 						<img src={Hero} alt="Hero" />
 					</div>
 				</div>
             </section>
             <section>
                 <div className="container">
-					{theme === '' && (
-						<>
-							<img src={BinanceImg} alt="" />
-							<img src={IlluviumImg} alt="" />
-							<img src={CoinbaseImg} alt="" />
-							<img src={MetaImg} alt="" />
-							<img src={CoinmarketcapImg} alt="" />
-						</>
-					)}
-					{theme === 'dark' && (
-						<>
-							<img src={BinanceDarkImg} alt="" />
-							<img src={IlluviumDarkImg} alt="" />
-							<img src={CoinbaseDarkImg} alt="" />
-							<img src={MetaDarkImg} alt="" />
-							<img src={CoinmarketcapDarkImg} alt="" />
-						</>
-					)}
+					<div className="partners">
+						{theme === '' && (
+							<>
+								<div>
+									<img src={BinanceImg} alt="" />
+								</div>
+								<div>
+									<img src={IlluviumImg} alt="" />
+								</div>
+								<div>
+									<img src={CoinbaseImg} alt="" />
+								</div>
+								<div>
+									<img src={MetaImg} alt="" />
+								</div>
+								<div>
+									<img src={CoinmarketcapImg} alt="" />
+								</div>
+							</>
+						)}
+						{theme === 'dark' && (
+							<>
+								<div>
+									<img src={BinanceDarkImg} alt="" />
+								</div>
+								<div>
+									<img src={IlluviumDarkImg} alt="" />
+								</div>
+								<div>
+									<img src={CoinbaseDarkImg} alt="" />
+								</div>
+								<div>
+									<img src={MetaDarkImg} alt="" />
+								</div>
+								<div>
+									<img src={CoinmarketcapDarkImg} alt="" />
+								</div>
+							</>
+						)}
+					</div>
 				</div>
             </section>
-            <section>
+            <section className="full">
 				<div className="subcontainer">
 					<div className="col-xl-8">
 						<h2>Ecoverse</h2>
@@ -257,7 +279,7 @@ function Home () {
 					</div>
 				</div>
             </section>
-            <section>
+            <section className="full">
 				<div className="subcontainer">
 					<h2>Our Features</h2>
 					<div className="row">
@@ -296,7 +318,7 @@ function Home () {
 					</div>
 				</div>
             </section>
-            <section>
+            <section className="full">
 				<div className="subcontainer">
 					<h2>How it works</h2>
 					<div className="row">
@@ -313,7 +335,7 @@ function Home () {
 					</div>
 				</div>
             </section>
-            <section>
+            <section className="full">
 				<div className="subcontainer">
 					<h2>Our Roadmap</h2>
 					<div className="row">
@@ -334,7 +356,7 @@ function Home () {
 					<button className="text-upper">WHITEPAPER</button>
 				</div>
             </section>
-            <section>
+            <section className="full">
 				<div className="subcontainer">
 					<h2>Frequently Asked Questions</h2>
 					<div>
@@ -351,7 +373,7 @@ function Home () {
 					</div>
 				</div>
             </section>
-            <section>
+            <section className="full">
 				<div className="subcontainer">
 					<h2>We are everywhere!</h2>
 					<div className="row">

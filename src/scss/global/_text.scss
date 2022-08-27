@@ -1,0 +1,17 @@
+@each $key, $value in $font-sizes {
+    .text-#{$key} {
+        font-size: $value;
+    }
+}
+
+.text-capit {
+    text-transform: capitalize;
+}
+
+.text-upper {
+    text-transform: uppercase;
+}
+
+.text-lower {
+    text-transform: lowercase;
+}
