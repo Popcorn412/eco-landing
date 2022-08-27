@@ -1,0 +1,28 @@
+{
+    "appKey": "ecoland",
+    "title": "Ecoland",
+    "menu": [
+        {
+            "label": "Home",
+            "url": "#home"
+        },
+        {
+            "label": "About",
+            "url": "#about"
+        },
+        {
+            "label": "Roadmap",
+            "url": "#roadmap"
+        },
+        {
+            "label": "Documentation",
+            "url": "#doc"
+        }
+    ],
+    "agency": [
+        {
+            "label": "Contact",
+            "url": "#contact"
+        }
+    ]
+}

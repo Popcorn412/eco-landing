@@ -1,0 +1,59 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+div, main, section, header, menu, footer {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.root {
+    background: var(--bg);
+    font-size: $font-size;
+}
+
+* {
+    font-size: 1rem;
+    color: var(--color);
+}
+
+@mixin container {
+    max-width: $container-width;
+    margin: auto;
+}
+
+@mixin subcontainer {
+    max-width: $subcontainer-width;
+    margin: auto;
+}
+
+.container {
+    @include container;
+}
+
+.subcontainer {
+    @include subcontainer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.25rem;
+}
+
+h1 {
+    font-size: $font-size-1;
+}
+
+h2 {
+    font-size: $font-size-2;
+}
+
+h3 {
+    font-size: $font-size-3;
+}

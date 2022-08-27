@@ -1,0 +1,45 @@
+$breakpoints: (
+	xs:				0,
+	sm:				576px,
+	md:				768px,
+	lg:				992px,
+	xl:				1200px,
+	xxl:			1400px
+);
+
+$container-width:	1100px;
+$subcontainer-width:900px;
+
+$font-size:			20px;
+$font-size-1:		80px;
+$font-size-2:		50px;
+$font-size-3:		32px;
+
+$space-0:			0rem;
+$space-1:			0rem;
+$space-2:			0rem;
+$space-3:			0rem;
+$space-4:			0rem;
+$space-5:			0rem;
+
+$white:             #FFFFFF;
+$black:             #000000;
+
+$bg:                #e6f4fe;
+$color:             #436f98;
+
+$bg-dark:           #011d4a;
+$color-dark:        #eef2f8;
+
+:root {
+	--bg:               $bg;
+	--color:            $color;
+
+	--bg-dark:          $bg-dark;
+	--color-dark:       $color-dark;
+}
+
+.dark {
+	--bg:               var(--bg-dark);
+	--color:            var(--color-dark);
+}

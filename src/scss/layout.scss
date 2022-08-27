@@ -1,0 +1,15 @@
+header {
+	.header {
+		@include container;
+		@include row-between;
+		.logo {
+			img {
+				width: 200px;
+			}
+		}
+	}
+}
+
+.footer {
+	@include container;
+}
